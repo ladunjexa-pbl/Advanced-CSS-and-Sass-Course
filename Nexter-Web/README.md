@@ -1,0 +1,1 @@
+"Nexter" Web - responsive real estate company website by using CSS Grid layout built with HTML, JS & Sass. 💵
