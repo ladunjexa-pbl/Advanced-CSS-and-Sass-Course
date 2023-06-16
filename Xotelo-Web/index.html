@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Xotelo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader js-preloader">
+      <div class="preloader__content js-content">
+        <img src="img/logo-light.png" alt="xotelo logo" class="preloader__logo" />
+        <h1 class="preloader__heading">Welcome to Xotelo</h1>
+        <p class="preloader__text">Star your new adventure...</p>
+      </div>
+    </div>
+    <!-- End of Preloader -->
+
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <img src="img/logo-light.png" alt="xotelo logo" class="logo" />
+
+        <!-- Search Input -->
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <!-- End of Search Input -->
+
+        <!-- User Navigation -->
+        <nav class="user-nav">
+          <!-- Theme Mode -->
+          <div class="user-nav__item theme-mode">
+            <svg class="user-nav__icon">
+              <use
+                class="user-theme__icon"
+                xlink:href="img/sprite.svg#icon-theme-light"
+              ></use>
+            </svg>
+          </div>
+          <!-- End of Theme Mode-->
+
+          <!-- Profile Wishlist -->
+          <div class="user-nav__item">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+            <ul class="user-nav__dropdown-menu">
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <img
+                    src="img/bookmark-1.jpg"
+                    alt="Laluna Grenada Hotel"
+                    class="user-nav__menu-photo"
+                  />
+                  <div class="user-nav__menu-content">
+                    <span class="user-nav__menu-name">Laluna Grenada</span>
+                    <div class="user-nav__menu-stars">
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <img
+                    src="img/bookmark-2.jpg"
+                    alt="Mandarin Oriental Hotel"
+                    class="user-nav__menu-photo"
+                  />
+                  <div class="user-nav__menu-content">
+                    <span class="user-nav__menu-name">Mandarin Oriental</span>
+                    <div class="user-nav__menu-stars">
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg
+                        class="user-nav__icon-star user-nav__icon-star--empty"
+                      >
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg
+                        class="user-nav__icon-star user-nav__icon-star--empty"
+                      >
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <img
+                    src="img/bookmark-3.jpg"
+                    alt="Sugar Beach Hotel"
+                    class="user-nav__menu-photo"
+                  />
+                  <div class="user-nav__menu-content">
+                    <span class="user-nav__menu-name">Sugar Beach</span>
+                    <div class="user-nav__menu-stars">
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="user-nav__icon-star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg
+                        class="user-nav__icon-star user-nav__icon-star--empty"
+                      >
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of Profile Wishlist -->
+
+          <!-- Profile Messages -->
+          <div class="user-nav__item">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">13</span>
+            <ul class="user-nav__dropdown-menu">
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <img
+                    src="img/user-5.jpg"
+                    alt="User 1"
+                    class="user-nav__menu-photo"
+                  />
+                  <div class="user-nav__menu-content">
+                    <span class="user-nav__menu-name">Freddy Carpenter</span>
+                    <p class="user-nav__menu-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <img
+                    src="img/user-6.jpg"
+                    alt="User 2"
+                    class="user-nav__menu-photo"
+                  />
+                  <div class="user-nav__menu-content">
+                    <span class="user-nav__menu-name">Bryanne Smith</span>
+                    <p class="user-nav__menu-text">
+                      Tempora labore similique est placeat sed vero harum nisi
+                      aperiam.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <img
+                    src="img/user-4.jpg"
+                    alt="User 3"
+                    class="user-nav__menu-photo"
+                  />
+                  <div class="user-nav__menu-content">
+                    <span class="user-nav__menu-name">Simon Wilbur</span>
+                    <p class="user-nav__menu-text">
+                      Provident libero nam rerum aspernatur, non veritatis
+                      illum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of Profile Messages -->
+
+          <!-- Profile Dropdown -->
+          <div class="user-nav__item">
+            <img
+              src="img/profile-photo.jpg"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Liron</span>
+            <ul
+              class="user-nav__dropdown-menu user-nav__dropdown-menu--align-right"
+            >
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <svg class="user-nav__menu-icon">
+                    <use xlink:href="img/sprite.svg#icon-cog"></use>
+                  </svg>
+                  <span>Settings & Privacy</span>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <svg class="user-nav__menu-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-help-with-circle"
+                    ></use>
+                  </svg>
+                  <span>Help & Support</span>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <svg class="user-nav__menu-icon">
+                    <use xlink:href="img/sprite.svg#icon-adjust"></use>
+                  </svg>
+                  <span>Display & Accessibility</span>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="javascript:void(0)" class="user-nav__link">
+                  <svg class="user-nav__menu-icon">
+                    <use xlink:href="img/sprite.svg#icon-log-out"></use>
+                  </svg>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of Profile Dropdown -->
+        </nav>
+        <!-- End of User Navigation -->
+      </header>
+      <!-- End of Header -->
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="javscript:void(0)" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="javscript:void(0)" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="javscript:void(0)" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car rental</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="javscript:void(0)" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal legal--sidebar">
+            &copy; 2022 ladunjexa. All rights reserved.
+          </div>
+        </nav>
+        <!-- End of Sidebar -->
+
+        <!-- Hotel Content -->
+        <main class="hotel-view">
+          <!-- Gallery -->
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Photo of hotel 1"
+                class="gallery__photo"
+              />
+              <figcaption class="gallery__title">
+                <span class="gallery__text">Night swimming</span>
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Photo of hotel 2"
+                class="gallery__photo"
+              />
+              <figcaption class="gallery__title">
+                <span class="gallery__text">Chillout summerbar</span>
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Photo of hotel 3"
+                class="gallery__photo"
+              />
+              <figcaption class="gallery__title">
+                <span class="gallery__text">Fortress coastline</span>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- End of Gallery -->
+
+          <!-- Overview -->
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Las Palmas</h1>
+
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Albufeira, Portugal</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">429 votes</div>
+            </div>
+          </div>
+          <!-- End of Overview -->
+
+          <!-- Details -->
+          <div class="details">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airpoort shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">Bilingual hotel workers</li>
+                <li class="list__item">Perfect for families and couples</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End of Details -->
+
+            <!-- User Reviews -->
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Feb 23rd, 2020</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User 2"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Sept 13th, 2020</p>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+            <!-- End of User Reviews -->
+          </div>
+          <!-- End of Content -->
+
+          <!-- CTA (call-to-action) -->
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Good news! We have 4 free rooms for your selected dates!
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Book now</span>
+              <span class="btn__invisible">Only 4 rooms left</span>
+            </button>
+          </div>
+          <!-- End of CTA (call-to-action) -->
+        </main>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

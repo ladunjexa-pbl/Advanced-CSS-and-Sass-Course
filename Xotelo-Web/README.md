@@ -1,0 +1,1 @@
+"Xotelo" Web - responsive hotels booking website by using Flexbox CSS layout built with HTML, jQuery & Sass. 🏩
