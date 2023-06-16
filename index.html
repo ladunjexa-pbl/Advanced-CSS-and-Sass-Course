@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ladunjexa — Advanced CSS & Sass Course</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!--Replace with your tailwind.css once created-->
+    <link
+      href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="master/assets/css/style.css" />
+  </head>
+
+  <body
+    class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed"
+    style="background-image: url('master/assets/media/header.png')"
+  >
+    <div class="h-full">
+      <!--
+        NAVBAR
+      -->
+      <div class="w-full container mx-auto">
+        <div class="w-full flex items-center justify-between">
+          <a
+            class="flex inline items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            href="#"
+          >
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500"
+              >Advanced CSS & Sass Course</span
+            >
+          </a>
+          <div class="flex w-1/2 justify-end content-center">
+            <a
+              class="udemy-button-link inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+              href="https://udemy.com/"
+            >
+              <!-- Udemy SVG -->
+              <svg
+                viewBox="0 0 412.77 799.91"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M412.74 238.2l-206.4-119.1L0 238.2V119.1L206.37 0l206.4 119.1v119.1z"
+                  fill="#a435f0"
+                />
+                <path
+                  d="M0 338.22h108.11v262.54c0 67.83 50.67 100.9 98.26 100.9 48 0 98.3-33.95 98.3-101.81V338.22h108.1v268.8c0 62.48-19.65 110.7-58.96 143.76-39.33 33.04-88.45 49.13-148.35 49.13-59.84 0-108.99-16.06-147.38-49.13C19.65 717.75 0 671.32 0 609.69z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="github-button-link inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+              href="https://github.com/"
+            >
+              <!-- GitHub SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        HERO
+      -->
+      <div
+        class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <!-- Left column -->
+        <div
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+        >
+          <h1
+            class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left"
+          >
+            Advanced<span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500"
+            >
+              CSS and Sass</span
+            >
+            Course: Flexbox, Grid, Animations and More!
+          </h1>
+          <p
+            class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left"
+          >
+            <a
+              href="https://www.udemy.com/course/advanced-css-and-sass/"
+              >Udemy course</a
+            >
+            by
+            <span class="italic"
+              >Jonas Schmedtmann</span
+            >.
+          </p>
+          <form
+            class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4"
+          >
+            <div class="mb-4">
+              <label
+                class="block text-blue-300 py-2 font-bold mb-2"
+                for="emailaddress"
+              >
+                Projects + BONUS
+              </label>
+              <div class="portfolio-list grid grid-cols-2 gap-2">
+                <!-- controlled by JavaScript -->
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-4">
+              <a href="#" class="project-href">
+                <button
+                  class="project-href-button bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                  type="button"
+                >
+                  ladunjexa.vercel.app
+                </button></a
+              >
+            </div>
+          </form>
+        </div>
+
+        <!-- Right column -->
+        <div class="w-full xl:w-3/5 p-12 overflow-hidden">
+          <div
+            class="relative transform transition hover:scale-105 duration-700 ease-in-out -rotate-6 hover:rotate-6"
+          >
+            <img
+              class="mx-auto w-full md:w-4/5"
+              src="master/assets/media/macbook.svg"
+            />
+            <img src="#" class="macbook-project-mockup" />
+          </div>
+        </div>
+
+        <div class="mx-auto md:pt-16">
+          <div
+            class="flex flex-row justify-center items-center mt-5 gap-10 technologies-container"
+          >
+            <!-- controlled by JavaScript -->
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+          <a class="text-gray-500 no-underline hover:no-underline" href="#"
+            >&copy; ladunjexa 2023</a
+          >
+          - UI by
+          <a
+            class="text-gray-500 no-underline hover:no-underline"
+            href="https://www.tailwindtoolbox.com"
+            >TailwindToolbox.com</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="master/assets/js/script.js"></script>
+  </body>
+</html>
